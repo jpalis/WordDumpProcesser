@@ -8,13 +8,14 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 # Last Updated : 12/16/2020
 #
-# USAGE:  python parse.py [WORD DUMP LIST] [OUTPUT TEXT FILE] [ACCURACY: 0.00 - 1.00]
+# USAGE:  python parse.py [SINGLE COLUMN WORD DUMP LIST] [OUTPUT TEXT FILE] [ACCURACY: 0.00 - 1.00]
 # 		  * Accuracy matches what percentage match of past test questions
 # 		  * 0.8 would match test questions that 80% of the words are on this word dump
 
 print("\nInitializing Parser ...\n")
 
 BASE_DIR = "https://www2.ucsc.edu/courses/cse112-wm/:/Old-Exams/"
+
 # Add additional midterm/ final exams as they are added in the future
 TESTS = [
 
@@ -25,13 +26,17 @@ TESTS = [
     "cmps112-2018q4-final.tt",
     "cmps112-2019q1-final.tt",
     "cse112-2020q1-final.tt",
+    "cse112-2020q4-final.tt",
+    
 
     # midterms
     "cmps112-2018q1-midterm.tt",
     "cmps112-2018q2-midterm.tt",
     "cmps112-2018q4-midterm.tt",
     "cmps112-2019q1-midterm.tt",
-    "cse112-2020q1-midterm.tt"
+    "cse112-2020q1-midterm.tt",
+    "cse112-2020q4-final.tt",
+    "cse112-2021q1-midterm.tt"
 ]
 
 # read in data from word list
