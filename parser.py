@@ -6,7 +6,7 @@ import ssl
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Last Updated : 12/16/2020
+# Last Updated : 03/02/2021
 #
 # USAGE:  python parse.py [SINGLE COLUMN WORD DUMP LIST] [OUTPUT TEXT FILE] [ACCURACY: 0.00 - 1.00]
 # 		  * Accuracy matches what percentage match of past test questions
@@ -27,7 +27,7 @@ TESTS = [
     "cmps112-2019q1-final.tt",
     "cse112-2020q1-final.tt",
     "cse112-2020q4-final.tt",
-    
+
 
     # midterms
     "cmps112-2018q1-midterm.tt",
@@ -35,7 +35,7 @@ TESTS = [
     "cmps112-2018q4-midterm.tt",
     "cmps112-2019q1-midterm.tt",
     "cse112-2020q1-midterm.tt",
-    "cse112-2020q4-final.tt",
+    "cse112-2020q4-midterm.tt",
     "cse112-2021q1-midterm.tt"
 ]
 
